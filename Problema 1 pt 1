@@ -1,0 +1,43 @@
+//Faça um algoritmo que simule um caixa eletrônico que saca cédulas e moedas. Ele deve pedir o valor a ser sacado pelo usuário. Em seguida, calcule o menor número de notas possíveis (cédulas) no qual o valor pode ser decomposto. As notas consideradas são de 10, 5, 2 e 1.
+
+programa
+{
+	funcao inicio() 
+	{
+		inteiro valor_saque
+		escreva ("Digite valor saque: ")
+		leia (valor_saque)
+		
+		se (valor_saque/10)
+		{
+		    leia (valor_saque)
+		    escreva ("Seu saque é  " + valor_saque + "notas de 10")
+		}
+		senao (valor_saque%10)
+		{
+		    leia (valor_saque)
+		    
+		    se (valor_saque/5)
+		    {
+		        leia (valor_saque)
+		        escreva("Seu saque é  " + valor_saque + "notas de 5")
+		    }
+		    senao (valor_saque%5)
+		    {
+		        leia (valor_saque)
+		        
+		        se (valor_saque/2)
+		        {
+		            leia (valor_saque)
+		            escreva("Seu saque é  " + valor_saque + "notas de 2")
+		        }
+		  
+		    }
+		}
+		senao (valor_saque)
+		{
+		    leia (valor_saque)
+		    escreva ("Seu saque é  " + valor_saque + "notas de 1")
+		}
+	}
+}
