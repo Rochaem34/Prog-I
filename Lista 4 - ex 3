@@ -1,0 +1,22 @@
+programa 
+{
+	funcao inicio() 
+	{
+		real velocidade_media, distancia, hora
+		
+		escreva ("Distancia que irá percorrer: ")
+		leia (distancia)
+		
+		escreva ("Velocidade média que irá percorrer: ")
+		leia (velocidade_media)
+		
+		hora = distancia/velocidade_media
+	
+		escreva ("Levara em média " + hora + " horas")
+		
+		velocidade_media = velocidade_media / 3.6
+		
+		escreva (" e sua velocidade média será de " + velocidade_media + " m/s")
+		
+	}
+}
