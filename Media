@@ -1,0 +1,33 @@
+programa
+{
+	funcao inicio()
+	{
+		real nota1, nota2, nota3, media
+		cadeia nome_aluno
+		
+		escreva ("Dig. nome: ")
+		leia(nome_aluno)
+		
+		escreva ("nota 1: ")
+		leia(nota1)
+		
+		escreva ("nota 2: ")
+		leia(nota2)
+		
+		escreva ("nota 3: ")
+		leia(nota3)
+		
+		media = (nota1 + nota2 + nota3)/3
+		
+		escreva (nome_aluno + " sua nota é: " + media)
+		
+		se (media >= 6)
+		{
+		   escreva ("Aluno aprovado!")
+		} 
+		senao  
+		{
+		    escreva ("Aluno reprovado")
+		}  
+	}
+}
