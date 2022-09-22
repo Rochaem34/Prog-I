@@ -1,0 +1,31 @@
+//Um parque de diversões quer controlar o acesso à montanha russa. No caso, só é permitido entrar pessoas com altura maior que 1.42 e pese mais que 40 Kg. Faça um algoritmo que leia a altura e o peso do usuário e imprima “Liberado” caso a pessoa tenha altura e peso suficiente e “Não liberado” em caso contrário.
+programa 
+{
+	funcao inicio() 
+	{
+	    //Altura em centímetros e peso em quilogramas
+	    real altura, peso
+	    escreva ("informe sua altura: ")
+	    leia (altura)
+	    
+	    se (altura >= 142)
+	    {
+	        escreva("informe seu peso: ")
+	        leia (peso)
+	        
+	        
+	        se (peso >= 60)
+	        {
+	            escreva ("Entrada altorizada!")
+	        }
+	        senao 
+	        {
+	            escreva ("Entrada negada")
+	        }
+	    }
+	    senao 
+	    {
+	        escreva ("Entrada negada")
+	    }
+	}	 
+}
