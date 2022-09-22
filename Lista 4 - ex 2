@@ -1,0 +1,20 @@
+programa 
+{
+	funcao inicio() 
+	{
+		real taxa, aplicacao_mensal, numero_meses, valor_acomulado
+		
+		escreva ("Inserir valor de aplicação mensal: ")
+		leia (aplicacao_mensal)
+		
+		escreva ("Inserir valor de taxa: ")
+		leia (taxa)
+		
+		escreva ("Numero de meses a ser aplicado: ")
+		leia (numero_meses)
+		
+		valor_acomulado = ((aplicacao_mensal * ( 1 + taxa)^numero_meses - 1)/taxa)
+		
+		escreva ("seu valore acumulado sera de: " + valor_acomulado)
+	}
+}
